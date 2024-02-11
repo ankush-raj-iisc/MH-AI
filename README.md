@@ -20,3 +20,5 @@ Build a recommendation system to recommend products to customers based on the th
 6. Evaluate both the models. ( Once the model is trained on the training data, it can be used to compute the error (RMSE) on predictions made on the test data.
 7. Get top - K ( K = 5) recommendations. Since our goal is to recommend new products for each user based on his/her habits, we will recommend 5 new products.
 8. Summarise your insights.
+
+#Due to the large size od data sets(350 MB, 1M datapoints), I couldn't upload the CSv file.
