@@ -1,0 +1,10 @@
+#to ignore pdf files downloaded and json file
+*.json
+*.pdf
+#to ignore exe and json files 
+*.exe
+#to ignore image files
+*.png
+*.jpeg
+#to ignore excel files
+*.xlsx

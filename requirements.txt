@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi
 uvicorn
 python-dotenv
@@ -7,3 +8,14 @@ langchain_community
 langchain_huggingface
 langchain_openai
 requests
+=======
+fastapi
+uvicorn
+python-dotenv
+pydantic
+langchain
+langchain_community
+langchain_huggingface
+langchain_openai
+requests
+>>>>>>> move-workflows-to-master
