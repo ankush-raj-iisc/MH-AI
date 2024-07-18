@@ -7,7 +7,7 @@ name: Build and deploy Python app to Azure Web App - MHAI
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7FDFA8E3BA6143BEACA862664DE36930 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FACE70E0018147D88A963FF85A6C70CE }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D62B6C267ABD4E78ADC3A1507FABABD5 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_58ACD2E0697D41C6843089CC6207E348 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D976A929286648B3A4F57923E15E45DD }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_716C416B962243D582CEE3A661E87789 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
