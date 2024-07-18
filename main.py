@@ -16,8 +16,12 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI
 
-# Set OpenAI API key
-os.environ["OPENAI_API_KEY"]="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"
+# Read API key from environment variable
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    raise ValueError("Missing OPENAI_API_KEY environment variable")
+
+os.environ["OPENAI_API_KEY"] = openai_api_key
 
 class Query(BaseModel):
     question: str
