@@ -64,3 +64,7 @@ async def get_answer(query: Query):
 @app.get("/")
 async def read_root():
     return {"message": "Welcome to the FastAPI application!"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
